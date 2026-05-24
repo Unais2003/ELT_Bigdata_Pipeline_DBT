@@ -1,0 +1,22 @@
+name: 'elt_nyc_taxi_dbt'
+version: '1.0'
+config-version: 2
+
+profile: 'elt_nyc_taxi_dbt'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+
+models:
+  elt_nyc_taxi_dbt:
+    
+    staging:
+      +materialized: view
+
+    intermediate:
+      +materialized: view
+
+    marts:
+      +materialized: table
