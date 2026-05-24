@@ -643,3 +643,15 @@ This project demonstrates:
 This project successfully adapts a Spark-based ETL pipeline into a modern ELT analytics engineering workflow using dbt and DuckDB.
 
 The project demonstrates how raw parquet data can be transformed into analytics-ready business models using modular SQL transformations, layered modeling architecture, automated testing, and lineage-driven dependency management.
+
+
+| Layer            | Purpose                   | What It Does                                      |
+| ---------------- | ------------------------- | ------------------------------------------------- |
+| **staging**      | Raw data cleaning layer   | Cleans, validates, renames, standardizes raw data |
+| **intermediate** | Business logic layer      | Creates derived features and transformations      |
+| **marts**        | Analytics/reporting layer | Builds KPI tables and analytics-ready datasets    |
+| **tests**        | Data quality validation   | Ensures data correctness and consistency          |
+| **macros**       | Reusable SQL logic        | Stores reusable SQL functions/business logic      |
+| **analyses**     | Ad hoc analytics queries  | Used for exploration and business analysis        |
+| **docs**         | Documentation layer       | Generates model documentation and metadata        |
+| **lineage**      | Dependency graph          | Shows how models depend on each other             |
