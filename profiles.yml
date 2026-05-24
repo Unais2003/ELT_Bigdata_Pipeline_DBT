@@ -1,3 +1,4 @@
+# warehouse connection configuration, this is where we specify how dbt should connect to our data warehouse. In this case, we are using DuckDB, which is a lightweight, embedded analytical database. We specify the type as 'duckdb' and provide the path to the local DuckDB database file. We also specify the number of threads to use for query execution, which can help improve performance when working with larger datasets.
 # Use local DuckDB database file.
 elt_nyc_taxi_dbt:
   target: dev

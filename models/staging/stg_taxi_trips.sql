@@ -27,7 +27,7 @@ SELECT
 
     store_and_fwd_flag
 
-FROM read_parquet('data/raw/yellow_tripdata_2023-01.parquet')
+FROM read_parquet('data/raw/yellow_tripdata_2023-01.parquet') -- directly reading from the raw data file in the staging layer - Extraction logic but not.
 
 WHERE fare_amount >= 2.5
   AND fare_amount <= 500

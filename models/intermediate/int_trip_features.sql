@@ -57,7 +57,7 @@ SELECT
     END AS is_airport_trip
 
 FROM {{ ref('stg_taxi_trips') }} 
--- using previous dbt model as source for transformations - This creates:
+-- here the dbt uses dependency management to reference the previous dbt model as source for transformations - This creates:
 
 -- lineage
 -- DAG

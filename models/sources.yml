@@ -1,11 +1,12 @@
+# in production it can be a data lake, data warehouse, or even an API. 
+# in this case we are using raw. 
 version: 2
-
 sources:
   - name: raw
     database: nyc_taxi
     schema: raw
 
-    tables:
+    tables: 
       - name: yellow_taxi_trips
 
       - name: taxi_zone_lookup
