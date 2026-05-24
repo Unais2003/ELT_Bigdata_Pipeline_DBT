@@ -1,0 +1,9 @@
+# Use local DuckDB database file.
+elt_nyc_taxi_dbt:
+  target: dev
+
+  outputs:
+    dev:
+      type: duckdb
+      path: nyc_taxi.duckdb
+      threads: 4

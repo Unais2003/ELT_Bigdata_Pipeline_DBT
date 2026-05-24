@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.env/
+
+# dbt
+target/
+logs/
+dbt_packages/
+package-lock.yml
+
+# DuckDB
+*.duckdb
+*.wal
+
+# MacOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Data Files
+*.parquet
+*.csv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Temporary Files
+*.tmp
+*.log
+
+# Environment Variables
+.env

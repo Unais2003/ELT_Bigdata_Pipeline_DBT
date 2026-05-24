@@ -1,12 +1,12 @@
-" business logic layer - feature engineering layer"
+-- business logic layer - feature engineering layer
 SELECT
 
     *,
 
-    TIMESTAMP_DIFF(
-        tpep_dropoff_datetime,
+    DATEDIFF(
+        'minute',
         tpep_pickup_datetime,
-        MINUTE
+        tpep_dropoff_datetime
     ) AS trip_duration_min,
 
     EXTRACT(HOUR FROM tpep_pickup_datetime) AS pickup_hour,
@@ -35,10 +35,10 @@ SELECT
     ROUND(
         trip_distance /
         (
-            TIMESTAMP_DIFF(
-                tpep_dropoff_datetime,
+            DATEDIFF(
+                'second',
                 tpep_pickup_datetime,
-                SECOND
+                tpep_dropoff_datetime
             ) / 3600.0
         ),
         2
@@ -57,8 +57,8 @@ SELECT
     END AS is_airport_trip
 
 FROM {{ ref('stg_taxi_trips') }} 
-"using previous dbt model as source for transformations - This creates:
+-- using previous dbt model as source for transformations - This creates:
 
-lineage
-DAG
-dependency graph"
+-- lineage
+-- DAG
+-- dependency graph"

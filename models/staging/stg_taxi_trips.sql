@@ -1,4 +1,5 @@
-""" cleaning and quality filtering layer for the raw data for the yellow taxi trips"""
+-- cleaning and quality filtering layer for the raw data for the yellow taxi trips = filter_invalid_rows() in spark
+-- The staging layer standardizes raw records and applies data quality validations before downstream transformations.
 
 SELECT
 
@@ -26,7 +27,7 @@ SELECT
 
     store_and_fwd_flag
 
-FROM {{ source('raw', 'yellow_taxi_trips') }}
+FROM read_parquet('data/raw/yellow_tripdata_2023-01.parquet')
 
 WHERE fare_amount >= 2.5
   AND fare_amount <= 500
