@@ -182,7 +182,7 @@ source venv/bin/activate
 ## 2. Install dbt
 
 ```bash
-pip install dbt-duckdb
+pip install dbt-duckdb plotly streamlit
 ```
 
 ---
