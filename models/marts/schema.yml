@@ -1,0 +1,16 @@
+# Adds - dbt documentation metadata.
+version: 2
+
+models:
+
+  - name: fact_trips
+    description: Central analytics fact table
+
+  - name: daily_metrics
+    description: Daily aggregated business metrics
+
+  - name: airport_trip_analysis
+    description: Airport trip analytics
+
+  - name: payment_type_analysis
+    description: Payment behavior analytics

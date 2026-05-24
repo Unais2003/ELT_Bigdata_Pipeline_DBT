@@ -1,0 +1,21 @@
+# validates - engineered features exist correctly.
+version: 2
+
+models:
+
+  - name: int_trip_features
+    description: Business feature engineering layer
+
+    columns:
+
+      - name: trip_duration_min
+        tests:
+          - not_null
+
+      - name: avg_speed_mph
+        tests:
+          - not_null
+
+      - name: tip_pct
+        tests:
+          - not_null
