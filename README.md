@@ -433,11 +433,7 @@ source venv/bin/activate
 # 3️⃣ Install Dependencies
 
 ```bash
-<<<<<<< HEAD
-pip install dbt-duckdb plotly streamlit
-=======
 pip install dbt-duckdb streamlit duckdb pandas plotly
->>>>>>> 59a89c6 (feat : added streamlit dashboard)
 ```
 
 ---
@@ -536,23 +532,6 @@ Potential production extensions:
 - Real-time ingestion
 - BI tool integration
 
----
-
-<<<<<<< HEAD
-\
-=======
-# 💬 Interview Talking Points
-
-This project demonstrates:
-
-- ETL → ELT migration thinking
-- Modern analytics engineering workflows
-- Warehouse-native transformations
-- SQL-based business modeling
-- Layered architecture design
-- Data quality engineering
-- Dashboard integration
-- dbt lineage & dependency management
 
 ---
 
@@ -563,4 +542,4 @@ This project successfully adapts a Spark-based ETL pipeline into a modern analyt
 The pipeline transforms raw NYC taxi parquet data into analytics-ready business models using modular SQL transformations, automated testing, lineage-driven dependency management, and interactive dashboarding.
 
 The project simulates real-world warehouse analytics workflows commonly used in modern cloud data platforms.
->>>>>>> 59a89c6 (feat : added streamlit dashboard)
+
