@@ -37,3 +37,4 @@ package-lock.yml
 
 # Environment Variables
 .env
+dbt_internal_packages/
